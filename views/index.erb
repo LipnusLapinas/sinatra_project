@@ -1,0 +1,21 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <% if word != nil %>
+      <p>
+        Your word is <%= word %>
+      </p>
+    <% end %>
+    <form>
+      <input type = 'text' name = 'word' />
+      <input type = 'text' name = 'shift' />
+      <input type = 'submit' value = 'Cipher!' />
+    </form>
+    <% if cipher != nil %>
+      <p>
+        Ciphered word: <%= cipher %>
+      </p>
+    <% end %>
+  </body>
+</html>
